@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Appunti personali, non pubblici fino alla consegna
+relazione.txt
+relazione_progetto.txt
