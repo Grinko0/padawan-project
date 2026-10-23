@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "id": "headquarters",
+      "text": "Where is the main headquarters of the Jedi Order?",
+      "slots": {
+        "temple": ["temple"],
+        "coruscant": ["coruscant","capital"]
+      }
+    },
+    {
+      "id": "children",
+      "text": "How many children can a Jedi have?",
+      "slots": {
+        "no_children": ["none", "zero", "0", "forbid","prohibit","ban"]
+      }
+    },
+    {
+      "id": "pillars",
+      "text": "What are the three pillars of the Jedi?",
+      "slots": {
+        "force": ["force"],
+        "knowledge": ["knowledge","wisdom"],
+        "self_discipline": ["discipline"]
+      }
+    }
+  ]
+}
