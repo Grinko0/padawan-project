@@ -1,0 +1,3 @@
+[tool.pytest.ini_options]   # le righe sotto sono impostazioni di pytest
+pythonpath = ["."]          # cerca i moduli anche nella radice del progetto
+testpaths = ["tests"]       # cerca i test solo nella cartella tests
