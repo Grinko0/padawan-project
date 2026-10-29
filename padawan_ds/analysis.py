@@ -17,3 +17,18 @@ def extract_lemmas(text: str) -> list[str]:
 
     return cleaned_lemmas
 
+
+def fill_slots(lemmas: list[str], slots: dict[str, list[str]]) -> set[str]:
+    """
+    Riceve i lemmi della risposta e il dizionario degli slot della 
+    domanda e restituisce un set dei nomi degli slot che sono stati
+    riempiti
+    """
+    filled_slots = set()
+
+    for slot_name, slot_lemmas in slots.items():
+        is_slot_filled = any(lemma in lemmas for lemma in slot_lemmas)
+        if is_slot_filled:
+            filled_slots.add(slot_name)
+
+    return filled_slots
